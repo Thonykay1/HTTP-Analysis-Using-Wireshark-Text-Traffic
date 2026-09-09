@@ -1,41 +1,61 @@
-# HTTP-Analysis-Using-Wireshark-Text-Traffic
-HTTP Network Forensics with Wireshark
+# SBT-DF203 — HTTP Analysis Using Wireshark
 
-A practical digital forensics project focused on capturing and analyzing a plaintext HTTP session in an isolated Linux laboratory environment.
+## Basic Networking Skills for Digital Forensics — Lab 1
 
-Overview
+This project demonstrates a practical network forensic investigation of a controlled plaintext HTTP session using Wireshark/TShark.
 
-In this lab, I created a local Apache web server and captured the network traffic generated when accessing the webpage. I then used Wireshark to analyze the packets and reconstruct the communication between the client and server.
+A local Apache web server was used to generate HTTP traffic. The traffic was captured on the loopback interface and analysed at the TCP, IP, HTTP, and link layers.
 
-The investigation focused on understanding how HTTP traffic is carried over TCP/IP and identifying useful network forensic evidence.
+The investigation focused on identifying the TCP three-way handshake, HTTP GET request, HTTP response, TCP connection termination, ports, sequence and acknowledgement numbers, timestamps, HTTP headers, and evidence integrity using SHA-256 hashing.
 
-What I Did
-Set up a local Apache HTTP server.
-Created and accessed a local training webpage.
-Captured HTTP traffic using Wireshark.
-Analyzed the TCP three-way handshake.
-Identified SYN, SYN-ACK and ACK packets.
-Examined source and destination IP addresses and ports.
-Analyzed TCP sequence and acknowledgement numbers.
-Identified the HTTP GET request and server response.
-Reconstructed the TCP conversation.
-Examined HTTP headers and transmitted content.
-Recorded packet timestamps to build a forensic timeline.
-Calculated a SHA-256 hash to verify evidence integrity.
-Tools Used
-Kali Linux
-Apache2
-Wireshark
-TShark
-SHA-256
-Key Learning
+---
 
-This project helped me understand how network traffic can be used as digital forensic evidence. I learned how different layers of network communication provide different types of information, from Ethernet and IP addresses to TCP connection details and HTTP application data.
+## 🎯 Objectives
 
-I also learned the importance of preserving captured evidence and using cryptographic hashes to verify its integrity.
+- Explain HTTP, TCP, IP, and link-layer forensic artefacts.
+- Create and capture a controlled plaintext HTTP session.
+- Identify TCP SYN, SYN-ACK, and ACK packets.
+- Identify source and destination IP addresses and ports.
+- Examine TCP sequence and acknowledgement numbers.
+- Extract HTTP requests, responses, and headers.
+- Reconstruct a TCP conversation.
+- Analyse timestamps and TCP connection termination.
+- Calculate SHA-256 hashes for captured evidence.
+- Prepare a concise forensic timeline and findings report.
 
-Evidence
+---
 
-The project contains the packet capture, analysis outputs, screenshots, hashes, and forensic report generated during the investigation.
+## 🛠️ Tools Used
 
-Note: All traffic captured in this project was generated within an authorized, isolated laboratory environment for educational purposes.
+- Kali Linux
+- Apache2
+- Wireshark
+- TShark
+- cURL
+- SHA-256
+- Linux command line
+
+---
+
+## 📁 Project Structure
+
+```text
+SBT-DF203-Lab1/
+├── evidence/
+│   └── basic.pcapng
+│
+├── working/
+│   └── basic_working.pcapng
+│
+├── reports/
+│   ├── curl_verbose.txt
+│   ├── capture_hashes.txt
+│   └── connection_close.tsv
+│
+├── screenshots/
+│   └── [Wireshark screenshots]
+│
+├── scripts/
+│   └── [optional scripts]
+│
+└── README.md
