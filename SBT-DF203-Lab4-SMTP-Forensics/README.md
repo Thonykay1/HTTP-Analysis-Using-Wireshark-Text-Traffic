@@ -9,7 +9,6 @@
 **Course:** SBT-DF203 — Basic Networking Skills for Digital Forensics
 **Lab:** Lab 4 — SMTP Email Traffic Forensics
 **Instructor:** Aminu Idris, AMCPN
-**Delivery Block:** 2/3 of 3 | 12–18 September 2026
 **Date:** 13/08/2026
 
 ---
