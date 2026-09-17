@@ -9,7 +9,6 @@
 **Course:** SBT-DF203 — Basic Networking Skills for Digital Forensics
 **Lab:** Lab 5 — ARP Poisoning Forensics
 **Instructor:** Aminu Idris, AMCPN
-**Delivery Block:** 3/3 of 3 | 12–18 September 2026
 **Date:** 14/08/2026
 
 ---
