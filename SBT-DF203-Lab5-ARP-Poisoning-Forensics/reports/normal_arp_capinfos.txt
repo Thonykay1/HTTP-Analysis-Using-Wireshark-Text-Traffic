@@ -1,0 +1,33 @@
+File name:           evidence/normal_arp.pcapng
+File type:           Wireshark/... - pcapng
+File encapsulation:  Ethernet
+File timestamp precision:  nanoseconds (9)
+Packet size limit:   file hdr: (not set)
+Number of packets:   2
+File size:           504 bytes
+Data size:           102 bytes
+Capture duration:    0.000160411 seconds
+Earliest packet time: 2026-09-15 18:30:07.035808608
+Latest packet time:   2026-09-15 18:30:07.035969019
+Data byte rate:      635 kBps
+Data bit rate:       5,085 kbps
+Average packet size: 51.00 bytes
+Average packet rate: 12 kpackets/s
+SHA256:              9c3911bad2bfdebf21599496fe89c2aa56d631c997056dcafc4ec17e80cf9395
+SHA1:                b41ba15e86a23965d2b1946f05848c75a7a706ed
+Strict time order:   True
+Capture hardware:    Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz (with SSE4.2)
+Capture oper-sys:    Linux 7.1.5+kali-amd64
+Capture application: Dumpcap (Wireshark) 4.6.6
+Number of interfaces in file: 1
+Interface #0 info:
+                     Name = eth0
+                     Encapsulation = Ethernet (1 - ether)
+                     Capture length = 262144
+                     Time precision = nanoseconds (9)
+                     Time ticks per second = 1000000000
+                     Time resolution = 0x09
+                     Filter string = arp
+                     Operating system = Linux 7.1.5+kali-amd64
+                     Number of stat entries = 1
+                     Number of packets = 2
