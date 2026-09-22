@@ -1,0 +1,1 @@
+LISTEN 0      511                *:80               *:*    users:(("apache2",pid=17274,fd=4),("apache2",pid=17273,fd=4),("apache2",pid=17272,fd=4),("apache2",pid=17271,fd=4),("apache2",pid=17270,fd=4),("apache2",pid=966,fd=4))
