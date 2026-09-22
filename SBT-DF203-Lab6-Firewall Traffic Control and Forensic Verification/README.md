@@ -1,5 +1,3 @@
-# SBT-DF203 — Lab 6: Firewall Traffic Control and Forensic Verification
-
 **Course:** Basic Networking Skills for Digital Forensics  
 **Course Code:** SBT-DF203  
 **Lab Number:** Lab 6  
@@ -23,7 +21,7 @@ This practical validated a Linux host-based firewall's ability to control HTTP t
 
 The evidence workspace was created following the ICDFA standard forensic folder layout: `evidence/` for original artifacts, `working/` for analysis copies, `reports/` for extracted outputs, `screenshots/` for figures, `scripts/` for tooling, and `exported/` for derived artifacts.
 
-![Lab folder structure](screenshots/Fig%201.1%20Lab6%20folder%20structure.png)
+![Lab folder structure](screenshots/Fig 1.1 Lab6 folder structure.png)
 
 *Fig 1.1 — Lab 6 folder structure*
 
@@ -33,7 +31,7 @@ The evidence workspace was created following the ICDFA standard forensic folder 
 
 A minimal lab page was deployed to `/var/www/html/firewall_lab.html` on the Kali server. Apache was started and enabled at boot.
 
-![Training webpage](screenshots/Fig%201.2%20%E2%80%94%20Training%20webpage%20served%20by%20Apache.png)
+![Training webpage served by Apache](screenshots/Fig 1.2 — Training webpage served by Apache.png)
 
 *Fig 1.2 — Training webpage served by Apache*
 
@@ -43,13 +41,13 @@ A minimal lab page was deployed to `/var/www/html/firewall_lab.html` on the Kali
 
 Before any firewall change, the original ruleset was exported with `iptables-save` and hashed with SHA-256.
 
-![iptables-save output](screenshots/Fig%201.3%20-%20The%20iptables-save%20output%20(the%20ruleset%20file).png)
+![iptables-save output](screenshots/Fig 1.3 - The iptables-save output (the ruleset file).png)
 
 *Fig 1.3 — The `iptables-save` output (the ruleset file)*
 
 The live INPUT chain was also listed with `iptables -L -n -v --line-numbers` to capture the baseline state.
 
-![Original iptables listing](screenshots/Fig%201.4%20-%20Original%20iptables%20listing.png.png)
+![Original iptables listing](screenshots/Fig 1.4 - Original iptables listing.png.png)
 
 *Fig 1.4 — Original iptables listing*
 
@@ -58,7 +56,7 @@ b8c6e01285998f85ca87dadb5852a8c714da0afedd120a06c8dbc444753a44fb reports/iptable
 
 text
 
-![SHA-256 of original ruleset](screenshots/Fig%201.5%20-%20SHA-256%20of%20exported%20ruleset.png.png)
+![SHA-256 of exported ruleset](screenshots/Fig 1.5 - SHA-256 of exported ruleset.png.png)
 
 *Fig 1.5 — SHA-256 of the exported ruleset*
 
@@ -84,7 +82,7 @@ text
 
 Server interfaces, routes and Apache listener were recorded on the Kali server:
 
-![Server interfaces and routes](screenshots/Fig%202.1%20-%20Server%20interfaces%20and%20routes%20and%20Apache%20listener.png)
+![Server interfaces and routes](screenshots/Fig 2.1 - Server interfaces and routes and Apache listener.png)
 
 *Fig 2.1 — Server interfaces, routes, and Apache listener*
 
@@ -105,7 +103,7 @@ Accept: */*
 <
 
 <!DOCTYPE html><html><body><h1>ICDFA Network Forensics Firewall Lab</h1><p>Server:MyApacheServer </p></body></html> ```
-https://screenshots/Fig%202.2%20%E2%80%93%20Baseline%20curl%20-v%20success%20from%20client.png
+![Baseline curl -v success from client](screenshots/Fig 2.2 – Baseline curl -v success from client.png)
 
 Fig 2.2 — Baseline curl -v success from client
 
@@ -119,7 +117,7 @@ Baseline result	HTTP/1.1 200 OK
 5. Part B — Capture the Allowed HTTP Baseline
 A capture was started on the server in the foreground, followed immediately by a curl request from the Windows client.
 
-https://screenshots/Fig%202.3%20%E2%80%93%20Start%20the%20allowed%20capture%20(foreground).png
+![Start of allowed capture](screenshots/Fig 2.3 – Start the allowed capture (foreground).png)
 
 Fig 2.3 — Start of the allowed capture (foreground)
 
@@ -127,7 +125,7 @@ After the capture completed, the resulting PCAPNG was hashed:
 
 text
 bdb691732c8d3023068c04b16ae5ca2414931467ef5aa127d478de2561a2809d  evidence/http_allowed.pcapng
-https://screenshots/Fig%202.4%20-%20Hash%20it.png
+![Hash of allowed capture](screenshots/Fig 2.4 - Hash it.png)
 
 Fig 2.4 — Hash of the allowed capture
 
@@ -141,7 +139,7 @@ The rule's presence was verified with iptables -C:
 
 text
 Rule verified present.
-https://screenshots/Fig%203.1%20%E2%80%94%20iptables%20-L%20INPUT%20after%20adding%20DROP%20rule.png
+![iptables -L INPUT after adding DROP rule](screenshots/Fig 3.1 — iptables -L INPUT after adding DROP rule.png)
 
 Fig 3.1 — iptables -L INPUT after adding DROP rule
 
@@ -154,7 +152,7 @@ Verification	iptables -C returned "Rule verified present."
 7. Part D — Capture Blocked Traffic and Rule Counters
 A second capture was taken while the Windows client retried the request. The packet capture showed repeated client SYN packets with no SYN-ACK from the server.
 
-https://screenshots/Fig%204.1%20%E2%80%94%20Wireshark%20blocked%20capture%20showing%20SYN%20retransmissions.png
+![Wireshark blocked capture](screenshots/Fig 4.1 — Wireshark blocked capture showing SYN retransmissions.png)
 
 Fig 4.1 — Wireshark blocked capture showing SYN retransmissions
 
@@ -166,7 +164,7 @@ text
 * Failed to connect to 192.168.186.128 port 80 after 10013 ms: Timeout was reached
 * Closing connection 0
 curl: (28) Failed to connect to 192.168.186.128 port 80 after 10013 ms: Timeout was reached
-https://screenshots/Fig%204.2%20%E2%80%93%20Windows%20client%20Output%20after%20blocked.png
+![Windows client output after blocked](screenshots/Fig 4.2 – Windows client Output after blocked.png)
 
 Fig 4.2 — Windows client output after blocked
 
@@ -187,7 +185,7 @@ Client result	curl: (28) Timeout was reached
 8. Part E — Compare Allowed and Blocked Captures
 Both captures were parsed with the same tshark filter to extract SYN flags, HTTP request/response fields, and retransmission indicators.
 
-https://screenshots/Figure%205.1%20-%20Compare%20both%20captures.png
+![Compare both captures](screenshots/Figure 5.1 - Compare both captures.png)
 
 Fig 5.1 — Compare both captures
 
@@ -273,3 +271,5 @@ RFC 793 — Transmission Control Protocol.
 RFC 792 — Internet Control Message Protocol.
 
 Wireshark Display Filter Reference — tcp.flags, tcp.analysis.retransmission, http.*.
+
+Prepared as part of the ICDFA SBT-DF203 
