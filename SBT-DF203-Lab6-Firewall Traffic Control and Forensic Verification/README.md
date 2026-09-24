@@ -1,23 +1,27 @@
-# SBT-DF203 — Lab 6: Firewall Traffic Control and Forensic Verification
-
 **Course:** Basic Networking Skills for Digital Forensics  
 **Course Code:** SBT-DF203  
 **Lab Number:** Lab 6  
+**Lab Title:** Firewall Traffic Control and Forensic Verification  
+**Delivery Block:** 2/3 of 3  
+**Scheduled Dates:** 12–18 September 2026  
 **Prepared by:** Aminu Idris, AMCPN — Founder, ICDFA  
-**Analyst:** Akinwa Omokunle Anthony — 2025/FWSD/11206  
+**Analyst:** Akinwa Omokunle Anthony  
+**Reg No:** 2025/FWSD/11206  
 **Analysis Workstation:** Kali Linux VM (`192.168.186.128`, `eth0`)
 
 ---
 
 ## Executive Summary
 
-This practical validated a Linux host-based firewall's ability to control HTTP traffic from one authorized lab client while allowing another. The lab used an isolated host-only VMnet8 network comprising a Kali Linux VM acting as the protected server and a Windows client VM acting as the requesting host. Apache 2.4.68 (Debian) served a training page. TShark captured baseline allowed HTTP traffic and then blocked traffic after a narrowly scoped `iptables` INPUT rule was inserted. The rule was applied only to the assigned blocked client IP, verified with `iptables -C`, and removed after evidence collection.
+This practical validated a Linux host-based firewall's ability to control HTTP traffic from one authorized lab client while allowing another. The lab used an isolated host-only VMnet8 network comprising a Kali Linux VM acting as the protected server and a Windows client VM acting as the requesting host. Apache 2.4.68 (Debian) served a training page at `http://192.168.186.128/firewall_lab.html`. TShark captured baseline allowed HTTP traffic and then blocked traffic after a narrowly scoped `iptables` INPUT rule was inserted. The rule was applied only to the assigned blocked client IP, verified with `iptables -C`, and removed after evidence collection. Firewall counters, packet capture evidence and client-side `curl` output were correlated to demonstrate the difference between permitted and dropped HTTP sessions. The original firewall ruleset was exported and SHA-256 hashed before any change to support evidence integrity and safe rollback.
 
 ---
 
 ## 1. Lab Folder Structure
 
-![Lab folder structure](screenshots/fig-1-1.png)
+The evidence workspace was created following the ICDFA standard forensic folder layout: `evidence/` for original artifacts, `working/` for analysis copies, `reports/` for extracted outputs, `screenshots/` for figures, `scripts/` for tooling, and `exported/` for derived artifacts.
+
+![Lab folder structure](screenshots/Fig 1.1 Lab6 folder structure.png)
 
 *Fig 1.1 — Lab 6 folder structure*
 
@@ -25,7 +29,9 @@ This practical validated a Linux host-based firewall's ability to control HTTP t
 
 ## 2. Training Webpage Served by Apache
 
-![Training webpage](screenshots/fig-1-2.png)
+A minimal lab page was deployed to `/var/www/html/firewall_lab.html` on the Kali server. Apache was started and enabled at boot.
+
+![Training webpage served by Apache](screenshots/Fig 1.2 — Training webpage served by Apache.png)
 
 *Fig 1.2 — Training webpage served by Apache*
 
@@ -33,20 +39,24 @@ This practical validated a Linux host-based firewall's ability to control HTTP t
 
 ## 3. Evidence Integrity and Chain of Custody
 
-![iptables-save output](screenshots/fig-1-3.png)
+Before any firewall change, the original ruleset was exported with `iptables-save` and hashed with SHA-256.
 
-*Fig 1.3 — The `iptables-save` output (ruleset file)*
+![iptables-save output](screenshots/Fig 1.3 - The iptables-save output (the ruleset file).png)
 
-![Original iptables listing](screenshots/fig-1-4.png)
+*Fig 1.3 — The `iptables-save` output (the ruleset file)*
+
+The live INPUT chain was also listed with `iptables -L -n -v --line-numbers` to capture the baseline state.
+
+![Original iptables listing](screenshots/Fig 1.4 - Original iptables listing.png.png)
 
 *Fig 1.4 — Original iptables listing*
 
-Original ruleset SHA-256:
+The hash of the original ruleset was recorded in `reports/iptables_before_sha256.txt`:
 b8c6e01285998f85ca87dadb5852a8c714da0afedd120a06c8dbc444753a44fb reports/iptables_before.rules
 
 text
 
-![SHA-256 of exported ruleset](screenshots/fig-1-5.png)
+![SHA-256 of exported ruleset](screenshots/Fig 1.5 - SHA-256 of exported ruleset.png.png)
 
 *Fig 1.5 — SHA-256 of the exported ruleset*
 
@@ -58,140 +68,208 @@ text
 | Trainee name | Akinwa Omokunle Anthony |
 | Date and time started | 18th September, 2026, 19:52 WAT |
 | Evidence files | `iptables_before.rules`, `iptables_before.txt`, `http_allowed.pcapng`, `http_blocked.pcapng`, `allowed_vs_blocked.tsv` |
-| Original SHA-256 | `b8c6e01285998f85ca87dadb5852a8c714da0afedd120a06c8dbc444753a44fb` |
-| Analysis workstation | Kali Linux VM — `eth0`, MAC `00:0c:29:2c:6b:37` |
-| Client VM | Windows — `192.168.186.1` (VMnet8) |
+| Source | Generated in authorized host-only lab network |
+| Original SHA-256 (iptables before) | `b8c6e01285998f85ca87dadb5852a8c714da0afedd120a06c8dbc444753a44fb` |
+| Working-copy SHA-256 | Same — original preserved |
+| Analysis workstation | Kali Linux VM, interface `eth0`, MAC `00:0c:29:2c:6b:37` |
+| Client VM | Windows, `192.168.186.1` (VMnet8) |
 | Gateway | `192.168.186.2` |
+| Notes | Only a single source-specific INPUT rule was applied and removed. No other firewall changes were made. |
 
 ---
 
-## 4. Part A — Baseline Access
+## 4. Part A — Record the Lab Network and Baseline Access
 
-![Server interfaces and routes](screenshots/fig-2-1.png)
+Server interfaces, routes and Apache listener were recorded on the Kali server:
+
+![Server interfaces and routes](screenshots/Fig 2.1 - Server interfaces and routes and Apache listener.png)
 
 *Fig 2.1 — Server interfaces, routes, and Apache listener*
 
-![Baseline curl -v success](screenshots/fig-2-2.png)
+Baseline HTTP access was verified from the Windows client with `curl -v`:
+Trying 192.168.186.128:80...
 
-*Fig 2.2 — Baseline `curl -v` success from client*
+Connected to 192.168.186.128 (192.168.186.128) port 80 (#0)
 
-| Field | Value |
-|---|---|
-| Server IP | `192.168.186.128` |
-| Server interface | `eth0` |
-| Client IP | `192.168.186.1` |
-| Baseline result | `HTTP/1.1 200 OK` |
+GET /firewall_lab.html HTTP/1.1
+Host: 192.168.186.128
+User-Agent: curl/8.0.1
+Accept: */*
 
----
+< HTTP/1.1 200 OK
+< Server: Apache/2.4.68 (Debian)
+< Content-Length: 117
+< Content-Type: text/html
+<
 
-## 5. Part B — Capture the Allowed HTTP Baseline
+<!DOCTYPE html><html><body><h1>ICDFA Network Forensics Firewall Lab</h1><p>Server:MyApacheServer </p></body></html> ```
+![Baseline curl -v success from client](screenshots/Fig 2.2 – Baseline curl -v success from client.png)
 
-![Start of allowed capture](screenshots/fig-2-3.png)
+Fig 2.2 — Baseline curl -v success from client
 
-*Fig 2.3 — Start of the allowed capture (foreground)*
+Field	Value
+Server IP	192.168.186.128
+Server interface	eth0
+Server MAC	00:0c:29:2c:6b:37
+Client IP	192.168.186.1
+Gateway	192.168.186.2
+Baseline result	HTTP/1.1 200 OK
+5. Part B — Capture the Allowed HTTP Baseline
+A capture was started on the server in the foreground, followed immediately by a curl request from the Windows client.
 
-Hash of the allowed capture:
-bdb691732c8d3023068c04b16ae5ca2414931467ef5aa127d478de2561a2809d evidence/http_allowed.pcapng
+![Start of allowed capture](screenshots/Fig 2.3 – Start the allowed capture (foreground).png)
 
-text
+Fig 2.3 — Start of the allowed capture (foreground)
 
-![Hash of allowed capture](screenshots/fig-2-4.png)
-
-*Fig 2.4 — Hash of the allowed capture*
-
----
-
-## 6. Part C — Apply and Verify the Blocking Rule
-
-![iptables -L INPUT after adding DROP rule](screenshots/fig-3-1.png)
-
-*Fig 3.1 — `iptables -L INPUT` after adding the DROP rule*
-
-| Field | Value |
-|---|---|
-| Rule position | INPUT chain, line 1 |
-| Source | `192.168.186.1` |
-| Protocol / port | TCP / 80 |
-| Target | `DROP` |
-
----
-
-## 7. Part D — Capture Blocked Traffic and Rule Counters
-
-![Wireshark blocked capture](screenshots/fig-4-1.png)
-
-*Fig 4.1 — Wireshark blocked capture showing SYN retransmissions*
-
-![Windows client output after blocked](screenshots/fig-4-2.png)
-
-*Fig 4.2 — Windows client output after blocked*
-
-Blocked capture SHA-256:
-24352948613f9920932b8f812fd62326a1c9c42fb2af63c5ee31cddc440d9d7e evidence/http_blocked.pcapng
+After the capture completed, the resulting PCAPNG was hashed:
 
 text
+bdb691732c8d3023068c04b16ae5ca2414931467ef5aa127d478de2561a2809d  evidence/http_allowed.pcapng
+![Hash of allowed capture](screenshots/Fig 2.4 - Hash it.png)
 
----
+Fig 2.4 — Hash of the allowed capture
 
-## 8. Part E — Compare Allowed and Blocked Captures
+6. Part C — Apply and Verify the Blocking Rule
+A single blocking rule was inserted at position 1 of the INPUT chain, scoped only to the assigned blocked client IP:
 
-![Compare both captures](screenshots/fig-5-1.png)
+bash
+BLOCKED_CLIENT_IP=192.168.186.1
+iptables -I INPUT 1 -s "$BLOCKED_CLIENT_IP" -p tcp --dport 80 -j DROP
+The rule's presence was verified with iptables -C:
 
-*Fig 5.1 — Compare both captures*
+text
+Rule verified present.
+![iptables -L INPUT after adding DROP rule](screenshots/Fig 3.1 — iptables -L INPUT after adding DROP rule.png)
 
-| Indicator | Allowed | Blocked |
-|---|---|---|
-| Client SYN visible | Yes | Yes |
-| Server SYN-ACK visible | Yes | No |
-| Handshake complete | Yes | No |
-| HTTP GET visible | Yes | No |
-| HTTP response visible | Yes (`HTTP/1.1 200 OK`) | No |
-| Retransmissions / timeouts | None | Repeated SYN retransmissions |
-| iptables counter change | 0 | 4 packets matched |
-| curl result | `200 OK` | `curl: (28) Timeout was reached` |
+Fig 3.1 — iptables -L INPUT after adding DROP rule
 
----
+Field	Value
+Rule position	INPUT chain, line 1
+Source	192.168.186.1
+Protocol / port	TCP / 80
+Target	DROP
+Verification	iptables -C returned "Rule verified present."
+7. Part D — Capture Blocked Traffic and Rule Counters
+A second capture was taken while the Windows client retried the request. The packet capture showed repeated client SYN packets with no SYN-ACK from the server.
 
-## 9. Part F — Remove the Rule and Restore Access
+![Wireshark blocked capture](screenshots/Fig 4.1 — Wireshark blocked capture showing SYN retransmissions.png)
 
-```bash
+Fig 4.1 — Wireshark blocked capture showing SYN retransmissions
+
+The Windows client's curl timed out after 10 seconds:
+
+text
+*   Trying 192.168.186.128:80...
+* ipv4 connect timeout after 10000ms, move on!
+* Failed to connect to 192.168.186.128 port 80 after 10013 ms: Timeout was reached
+* Closing connection 0
+curl: (28) Failed to connect to 192.168.186.128 port 80 after 10013 ms: Timeout was reached
+![Windows client output after blocked](screenshots/Fig 4.2 – Windows client Output after blocked.png)
+
+Fig 4.2 — Windows client output after blocked
+
+The DROP rule's packet counter incremented as expected:
+
+text
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination
+1        4   240 DROP       tcp  --  *      *       192.168.186.1        0.0.0.0/0            tcp dpt:80
+Blocked capture summary:
+
+Item	Value
+Capture file	evidence/http_blocked.pcapng
+SHA-256	24352948613f9920932b8f812fd62326a1c9c42fb2af63c5ee31cddc440d9d7e
+Filter	host 192.168.186.1 and tcp port 80
+DROP rule counter after test	4 packets / 240 bytes
+Client result	curl: (28) Timeout was reached
+8. Part E — Compare Allowed and Blocked Captures
+Both captures were parsed with the same tshark filter to extract SYN flags, HTTP request/response fields, and retransmission indicators.
+
+![Compare both captures](screenshots/Figure 5.1 - Compare both captures.png)
+
+Fig 5.1 — Compare both captures
+
+Comparison:
+
+Indicator	Allowed Capture	Blocked Capture
+Client SYN visible?	Yes	Yes
+Server SYN-ACK visible?	Yes	No
+Handshake completed?	Yes	No
+HTTP GET visible?	Yes (GET /firewall_lab.html)	No
+HTTP response visible?	Yes (HTTP/1.1 200 OK)	No
+Retransmissions / timeouts	None	Repeated SYN retransmissions
+iptables counter change	0 (rule not applied)	4 packets matched
+curl result	HTTP/1.1 200 OK	curl: (28) Timeout was reached
+The three independent lines of evidence — packet capture, firewall counter, and client output — corroborate each other and prove the block was caused by the firewall, not by a server outage or network fault.
+
+9. Part F — Remove the Rule and Restore Access
+The blocking rule was removed using the exact same criteria used to insert it (deletion by specification, not by line number):
+
+bash
 iptables -D INPUT -s 192.168.186.1 -p tcp --dport 80 -j DROP
-The INPUT chain returned to baseline and HTTP access was restored from the Windows client.
+The INPUT chain returned to its baseline state and HTTP access was restored from the Windows client.
 
 10. Forensic Interpretation Questions
-1. Why does DROP cause SYN retransmissions and a timeout?
-DROP silently discards the SYN with no reply. TCP retransmits with exponential backoff until the connect timer expires.
+1. Why does DROP commonly cause SYN retransmissions and a timeout?
 
-2. How would REJECT differ in the capture and client output?
-REJECT actively replies — with ICMP unreachable the client fails fast with "Connection refused"; with TCP RST, "Connection reset by peer".
+DROP silently discards the SYN without notifying the client. TCP has no way to know the port is unreachable, so it retransmits the SYN with exponential backoff until the connect timer expires. The capture shows repeated identical SYN packets and curl reports a connection timeout — no RST, no ICMP, just silence.
+
+2. How would a REJECT rule differ in the packet capture and client output?
+
+REJECT actively replies. With --reject-with icmp-port-unreachable (default for TCP), the client receives an ICMP Destination Unreachable immediately and curl fails fast with "Connection refused". With --reject-with tcp-reset, the client receives a TCP RST and curl reports "Connection reset by peer". In the capture, you'd see the SYN followed by ICMP or RST — not retransmissions.
 
 3. Why are firewall counters valuable corroborating evidence?
-Counters prove the rule matched live traffic. Without them, a blocked SYN could also be explained by a down server or broken route.
 
-4. What evidence would show the web server was down rather than firewall-blocked?
-A down server's host stack replies with a TCP RST (no listener) or nothing (host offline), and no iptables counter increments. Firewall-blocked traffic shows SYN arriving with no RST/ICMP, no SYN-ACK, and the DROP counter incrementing.
+Packet counters prove the rule was actually matched and the drop happened at the firewall, not somewhere else. Without counters, a blocked capture could be explained by a dead server, a broken route, or a client-side failure. A rising pkts count on the specific rule ties the observed packets directly to the firewall decision.
 
-5. Risk of deleting a rule by line number after other rules changed?
-iptables -D INPUT <line> deletes whatever currently occupies that position. Delete by specification instead.
+4. What evidence would show that the web server was down rather than firewall-blocked?
+
+If the server is down, the SYN still reaches the host and the host replies with a TCP RST (no listener) or nothing at all (host offline). In a capture you'd see the SYN arrive, then either an RST from the server stack or no response with no matching iptables rule and no counter increment. Firewall-blocked traffic, by contrast, shows the SYN arriving at the interface, no RST or ICMP, no SYN-ACK, and the DROP rule's counter incrementing in lockstep with the retransmissions.
+
+5. What is the risk of deleting a rule by line number after other rules have changed?
+
+iptables -D INPUT <line> deletes whichever rule currently occupies that position. If any rule was inserted, deleted, or reordered since the last listing, the line number refers to a different rule — you can silently delete the wrong rule. Safer practice is to delete by specification (iptables -D INPUT -s <ip> -p tcp --dport 80 -j DROP) so the deletion targets the exact rule.
 
 11. Key Findings
-A source-specific DROP rule at the top of INPUT blocked HTTP from one client without affecting other traffic.
+A source-specific DROP rule at the top of the INPUT chain blocked HTTP from one client without affecting other traffic.
 
 DROP caused the client to time out because packets were silently discarded.
 
-The block was visible in three independent places — capture, firewall counter, client output.
+The block was visible in three independent places — packet capture, firewall counter, and client output.
 
-Firewall counters are essential corroborating evidence.
+Firewall counters are essential corroborating evidence — a non-zero counter proves the rule matched live traffic.
 
-An empty SYN capture without SYN-ACK does not on its own prove a firewall block.
+An empty SYN capture without a SYN-ACK does not on its own prove a firewall block; server-down and network faults can produce similar evidence, so counters and application health must also be checked.
 
-The original ruleset was preserved and hashed before any change.
+The original ruleset was preserved and hashed before any change to allow safe rollback.
 
-12. References
-ICDFA SBT-DF203 — Lab 6: Firewall Traffic Control and Forensic Verification.
+12. Evidential Limitations
+DROP silently discards packets; a capture alone cannot prove where the SYN was lost — corroborating evidence (counters, ss -lntp, application health) is required.
 
-iptables(8), iptables-save(8) man pages.
+REJECT produces different evidence: ICMP or TCP RST visible in the capture, and the client fails fast rather than timing out.
 
-RFC 793 — TCP. RFC 792 — ICMP.
+Port number alone does not indicate firewall behaviour; rule position and target action must be examined.
 
-Wireshark filter reference — tcp.flags, tcp.analysis.retransmission, http.*.
+Deleting a rule by line number is unsafe if other rules have changed.
+
+13. Ethical Handling of Evidence
+The original firewall ruleset was exported and SHA-256 hashed before any change.
+
+Only a source-specific rule was applied; no firewall flush or broad blocking was performed.
+
+The rule was removed after evidence collection and the INPUT chain was confirmed restored.
+
+No sensitive data was published outside this repository.
+
+14. References
+ICDFA SBT-DF203 — Basic Networking Skills for Digital Forensics, Lab 6: Firewall Traffic Control and Forensic Verification.
+
+iptables(8), iptables-save(8), and iptables-restore(8) man pages.
+
+RFC 793 — Transmission Control Protocol.
+
+RFC 792 — Internet Control Message Protocol.
+
+Wireshark Display Filter Reference — tcp.flags, tcp.analysis.retransmission, http.*.
+
+Prepared as part of the ICDFA SBT-DF203 
