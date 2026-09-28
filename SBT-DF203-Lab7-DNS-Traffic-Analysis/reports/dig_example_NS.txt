@@ -1,0 +1,23 @@
+
+; <<>> DiG 9.20.27-1-Debian <<>> google.com NS
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 60265
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;google.com.			IN	NS
+
+;; ANSWER SECTION:
+google.com.		5	IN	NS	ns3.google.com.
+google.com.		5	IN	NS	ns4.google.com.
+google.com.		5	IN	NS	ns2.google.com.
+google.com.		5	IN	NS	ns1.google.com.
+
+;; Query time: 1435 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Mon Sep 28 10:36:25 WAT 2026
+;; MSG SIZE  rcvd: 111
+

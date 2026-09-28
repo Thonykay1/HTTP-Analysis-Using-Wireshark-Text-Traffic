@@ -1,0 +1,33 @@
+File name:           evidence/fresh_dig_dns.pcapng
+File type:           Wireshark/... - pcapng
+File encapsulation:  Linux cooked-mode capture v1
+File timestamp precision:  nanoseconds (9)
+Packet size limit:   file hdr: (not set)
+Number of packets:   4
+File size:           852 bytes
+Data size:           378 bytes
+Capture duration:    2.114295260 seconds
+Earliest packet time: 2026-09-28 11:48:53.969635562
+Latest packet time:   2026-09-28 11:48:56.083930822
+Data byte rate:      178 bytes/s
+Data bit rate:       1,430 bits/s
+Average packet size: 94.50 bytes
+Average packet rate: 1 packets/s
+SHA256:              16a3600b4a1781b384ba15169fe2027c4a5fe3b142d03775b9b00f2e0611173f
+SHA1:                0730a9f0f5de798ff320a05ad83f4392302586f7
+Strict time order:   True
+Capture hardware:    Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz (with SSE4.2)
+Capture oper-sys:    Linux 7.1.5+kali-amd64
+Capture application: Dumpcap (Wireshark) 4.6.6
+Number of interfaces in file: 1
+Interface #0 info:
+                     Name = any
+                     Encapsulation = Linux cooked-mode capture v1 (25 - linux-sll)
+                     Capture length = 262144
+                     Time precision = nanoseconds (9)
+                     Time ticks per second = 1000000000
+                     Time resolution = 0x09
+                     Filter string = port 53
+                     Operating system = Linux 7.1.5+kali-amd64
+                     Number of stat entries = 1
+                     Number of packets = 4

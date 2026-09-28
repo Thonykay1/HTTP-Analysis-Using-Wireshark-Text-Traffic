@@ -1,0 +1,20 @@
+
+; <<>> DiG 9.20.27-1-Debian <<>> google.com MX
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17047
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;google.com.			IN	MX
+
+;; ANSWER SECTION:
+google.com.		5	IN	MX	10 smtp.google.com.
+
+;; Query time: 3738 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Mon Sep 28 10:36:24 WAT 2026
+;; MSG SIZE  rcvd: 60
+

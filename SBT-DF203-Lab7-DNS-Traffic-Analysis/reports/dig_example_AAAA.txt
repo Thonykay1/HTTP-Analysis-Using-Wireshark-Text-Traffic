@@ -1,0 +1,21 @@
+;; communications error to 127.0.0.53#53: timed out
+
+; <<>> DiG 9.20.27-1-Debian <<>> google.com AAAA
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 54262
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;google.com.			IN	AAAA
+
+;; ANSWER SECTION:
+google.com.		5	IN	AAAA	2a00:1450:4006:800::200e
+
+;; Query time: 751 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Mon Sep 28 10:36:20 WAT 2026
+;; MSG SIZE  rcvd: 67
+
