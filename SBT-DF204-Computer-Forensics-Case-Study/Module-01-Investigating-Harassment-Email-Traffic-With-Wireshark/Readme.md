@@ -1,7 +1,7 @@
 
 # SBT-DF204 — Case Study 1: Investigating Harassment Email Traffic With Wireshark
-![ICDFA](https://img.shields.io/badge/ICDFA-SBT--DF203-blue)
-![Lab](https://img.shields.io/badge/Lab-5-orange)
+![ICDFA](https://img.shields.io/badge/ICDFA-SBT--DF204-blue)
+![Lab](https://img.shields.io/badge/CaseStudy-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 **International Cybersecurity and Digital Forensics Academy (ICDFA)**
