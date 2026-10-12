@@ -1,0 +1,3 @@
+0|id|INTEGER|1||1
+1|chain_index|INTEGER|1||2
+2|url|LONGVARCHAR|1||0

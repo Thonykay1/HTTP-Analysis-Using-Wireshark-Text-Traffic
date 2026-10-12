@@ -1,0 +1,23 @@
+vid          utc                                                     url                                                                         title                              base
+---  -------------------  ------------------------------------------------------------------------------------------  ------------------------------------------------------------  ----
+  1  2022-04-19 13:54:18  https://www.google.com/search?q=craigslist&rlz=1C1ONGR_enUS989US989&oq=craigslist&aqs=chro  craigslist - Google Search                                       5
+  2  2022-04-19 13:54:19  https://www.google.com/search?q=craigslist&rlz=1C1ONGR_enUS989US989&oq=craigslist&aqs=chro  craigslist - Google Search                                       0
+  3  2022-04-19 13:54:19  https://www.craigslist.org/                                                                 craigslist: baltimore jobs, apartments, for sale, services,      0
+  4  2022-04-19 13:54:19  https://geo.craigslist.org/                                                                 craigslist: baltimore jobs, apartments, for sale, services,      0
+  5  2022-04-19 13:54:19  https://baltimore.craigslist.org/                                                           craigslist: baltimore jobs, apartments, for sale, services,      0
+  6  2022-04-19 13:54:22  https://accounts.craigslist.org/login/home                                                  craigslist account                                               0
+  7  2022-04-19 13:54:22  https://accounts.craigslist.org/login?rp=%2Flogin%2Fhome&rt=L                               craigslist - account log in                                      0
+  8  2022-04-19 13:54:39  https://accounts.craigslist.org/login/home                                                  craigslist account                                               7
+  9  2022-04-19 13:55:03  https://www.craigslist.org/                                                                 craigslist: baltimore jobs, apartments, for sale, services,      0
+ 10  2022-04-19 13:55:03  https://baltimore.craigslist.org/                                                           craigslist: baltimore jobs, apartments, for sale, services,      0
+ 11  2022-04-19 13:55:05  https://post.craigslist.org/c/bal                                                           baltimore | choose type                                          0
+ 12  2022-04-19 13:55:05  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5                                  baltimore | posting confirmation                                 0
+ 13  2022-04-19 13:55:05  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=type                           baltimore | choose type                                          0
+ 14  2022-04-19 13:55:10  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=cat                            baltimore | choose category                                      7
+ 15  2022-04-19 13:55:15  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=edit                           baltimore | create posting                                       7
+ 16  2022-04-19 13:58:13  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=geoverify                      baltimore | add map                                              7
+ 17  2022-04-19 13:58:17  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=editimage                      baltimore | create posting                                       7
+ 18  2022-04-19 13:58:19  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=preview                        baltimore | create posting                                       7
+ 19  2022-04-19 13:58:22  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5                                  baltimore | posting confirmation                                 7
+ 20  2022-04-19 13:58:27  https://post.craigslist.org/manage/7473121658                                               baltimore | manage posting                                       0
+ 21  2022-04-19 13:58:31  https://baltimore.craigslist.org/hab/d/baltimore-cheaper-than-rx-supplements/7473121658.ht  cheaper than Rx supplements - health and beauty - by owner -     0

@@ -1,0 +1,7 @@
+0|id|INTEGER|0||1
+1|url|LONGVARCHAR|0||0
+2|title|LONGVARCHAR|0||0
+3|visit_count|INTEGER|1|0|0
+4|typed_count|INTEGER|1|0|0
+5|last_visit_time|INTEGER|1||0
+6|hidden|INTEGER|1|0|0

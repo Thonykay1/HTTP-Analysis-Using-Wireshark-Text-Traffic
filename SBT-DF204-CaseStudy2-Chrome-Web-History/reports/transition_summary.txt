@@ -1,0 +1,5 @@
+base    meaning    occurrences
+----  -----------  -----------
+   0  Link click            63
+   7  Form submit            7
+   5  Omnibox                4

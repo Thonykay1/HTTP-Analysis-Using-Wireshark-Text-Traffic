@@ -1,0 +1,3 @@
+id                  guid                       start_utc             end_utc                          target_path                             tab_url                referrer       mime_type  total_bytes
+--  ------------------------------------  -------------------  -------------------  -----------------------------------------------  -------------------------  ------------------  ---------  -----------
+ 1  104c5d2b-4cba-40f3-9e11-02b782e54bfa  2022-04-19 14:56:58  2022-04-19 14:57:10  C:\Users\FSCS_User\Desktop\proof_of_payment.png  https://imgur.com/dTgrkP7  https://imgur.com/  image/png        33844

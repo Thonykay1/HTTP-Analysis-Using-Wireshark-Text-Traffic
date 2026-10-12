@@ -1,0 +1,76 @@
+visit_id  url_id       visit_utc                                             url                                                             title                      from_visit  base
+--------  ------  -------------------  --------------------------------------------------------------------------------  ---------------------------------------------  ----------  ----
+       1       1  2022-04-19 13:54:18  https://www.google.com/search?q=craigslist&rlz=1C1ONGR_enUS989US989&oq=craigslis  craigslist - Google Search                              0     5
+       2       1  2022-04-19 13:54:19  https://www.google.com/search?q=craigslist&rlz=1C1ONGR_enUS989US989&oq=craigslis  craigslist - Google Search                              0     0
+       3       2  2022-04-19 13:54:19  https://www.craigslist.org/                                                       craigslist: baltimore jobs, apartments, for s           2     0
+       4       3  2022-04-19 13:54:19  https://geo.craigslist.org/                                                       craigslist: baltimore jobs, apartments, for s           3     0
+       5       4  2022-04-19 13:54:19  https://baltimore.craigslist.org/                                                 craigslist: baltimore jobs, apartments, for s           4     0
+       6       5  2022-04-19 13:54:22  https://accounts.craigslist.org/login/home                                        craigslist account                                      5     0
+       7       6  2022-04-19 13:54:22  https://accounts.craigslist.org/login?rp=%2Flogin%2Fhome&rt=L                     craigslist - account log in                             6     0
+       8       5  2022-04-19 13:54:39  https://accounts.craigslist.org/login/home                                        craigslist account                                      7     7
+       9       2  2022-04-19 13:55:03  https://www.craigslist.org/                                                       craigslist: baltimore jobs, apartments, for s           8     0
+      10       4  2022-04-19 13:55:03  https://baltimore.craigslist.org/                                                 craigslist: baltimore jobs, apartments, for s           9     0
+      11       7  2022-04-19 13:55:05  https://post.craigslist.org/c/bal                                                 baltimore | choose type                                10     0
+      12       8  2022-04-19 13:55:05  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5                        baltimore | posting confirmation                       11     0
+      13       9  2022-04-19 13:55:05  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=type                 baltimore | choose type                                12     0
+      14      10  2022-04-19 13:55:10  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=cat                  baltimore | choose category                            13     7
+      15      11  2022-04-19 13:55:15  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=edit                 baltimore | create posting                             14     7
+      16      12  2022-04-19 13:58:13  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=geoverify            baltimore | add map                                    15     7
+      17      13  2022-04-19 13:58:17  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=editimage            baltimore | create posting                             16     7
+      18      14  2022-04-19 13:58:19  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=preview              baltimore | create posting                             17     7
+      19       8  2022-04-19 13:58:22  https://post.craigslist.org/k/sHbOUOi_7BG68qUDIbeTbQ/bQTi5                        baltimore | posting confirmation                       18     7
+      20      15  2022-04-19 13:58:27  https://post.craigslist.org/manage/7473121658                                     baltimore | manage posting                             19     0
+      21      16  2022-04-19 13:58:31  https://baltimore.craigslist.org/hab/d/baltimore-cheaper-than-rx-supplements/747  cheaper than Rx supplements - health and beau           0     0
+      22      17  2022-04-19 13:58:38  https://www.google.com/search?q=gmail&rlz=1C1ONGR_enUS989US989&oq=gmail&aqs=chro  gmail - Google Search                                   0     5
+      23      17  2022-04-19 13:58:39  https://www.google.com/search?q=gmail&rlz=1C1ONGR_enUS989US989&oq=gmail&aqs=chro  gmail - Google Search                                   0     0
+      24      18  2022-04-19 13:58:40  https://www.google.com/gmail/                                                     Gmail: Free, Private & Secure Email | Google           23     0
+      25      19  2022-04-19 13:58:40  https://mail.google.com/mail/                                                     Inbox (12) - unsub.fscs@gmail.com - Gmail              24     0
+      26      20  2022-04-19 13:58:40  https://mail.google.com/mail/u/0/                                                 Inbox (12) - unsub.fscs@gmail.com - Gmail              25     0
+      27      21  2022-04-19 13:58:40  https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&con  Gmail: Free, Private & Secure Email | Google           26     0
+      28      22  2022-04-19 13:58:40  https://mail.google.com/intl/en/mail/help/about.html                              Gmail: Free, Private & Secure Email | Google           27     0
+      29      23  2022-04-19 13:58:40  https://www.google.com/intl/en/mail/help/about.html                               Gmail: Free, Private & Secure Email | Google           28     0
+      30      24  2022-04-19 13:58:40  https://www.google.com/gmail/about/                                               Gmail: Free, Private & Secure Email | Google           29     0
+      31      25  2022-04-19 13:58:43  https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=h  Gmail                                                   0     0
+      32      26  2022-04-19 13:58:43  https://accounts.google.com/AccountChooser?service=mail&continue=https%3A%2F%2Fm  Gmail                                                  31     0
+      33      27  2022-04-19 13:58:43  https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fmail.google.com%  Gmail                                                  32     0
+      34      27  2022-04-19 13:58:44  https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fmail.google.com%  Gmail                                                   0     0
+      35      28  2022-04-19 13:58:44  https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.goo  Gmail                                                   0     0
+      36      29  2022-04-19 13:59:26  https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fmail.  Gmail                                                   0     0
+      37      30  2022-04-19 13:59:29  https://accounts.google.com/CheckCookie?continue=https%3A%2F%2Fmail.google.com%2  Inbox (12) - unsub.fscs@gmail.com - Gmail              36     0
+      38      31  2022-04-19 13:59:29  https://mail.google.com/accounts/SetOSID?authuser=0&continue=https%3A%2F%2Faccou  Inbox (12) - unsub.fscs@gmail.com - Gmail              37     0
+      39      32  2022-04-19 13:59:29  https://accounts.youtube.com/accounts/SetSID?ssdc=1&sidt=ALWU2ctdRyPZH5SUntnYwGN  Inbox (12) - unsub.fscs@gmail.com - Gmail              38     0
+      40      19  2022-04-19 13:59:29  https://mail.google.com/mail/                                                     Inbox (12) - unsub.fscs@gmail.com - Gmail              39     0
+      41      20  2022-04-19 13:59:29  https://mail.google.com/mail/u/0/                                                 Inbox (12) - unsub.fscs@gmail.com - Gmail              40     0
+      42      33  2022-04-19 13:59:31  https://mail.google.com/mail/u/0/#inbox                                           Inbox (12) - unsub.fscs@gmail.com - Gmail              41     0
+      43      34  2022-04-19 14:04:12  https://mail.google.com/mail/u/0/#inbox/WhctKKXXDrfCqXBGCnHkHGxZnZbkXKdXnJTmxwZw  cheaper than Rx supplements - order - unsub.f           0     0
+      44      35  2022-04-19 14:04:35  https://mail.google.com/mail/u/0/#inbox/WhctKKXXDrfCqXBGCnHkHGxZnZbkXKdXnJTmxwZw  cheaper than Rx supplements - order - unsub.f          43     0
+      45      36  2022-04-19 14:04:46  https://mail.google.com/mail/u/0/#inbox/WhctKKXXDrfCqXBGCnHkHGxZnZbkXKdXnJTmxwZw  cheaper than Rx supplements - order - unsub.f          44     0
+      46      34  2022-04-19 14:04:52  https://mail.google.com/mail/u/0/#inbox/WhctKKXXDrfCqXBGCnHkHGxZnZbkXKdXnJTmxwZw  cheaper than Rx supplements - order - unsub.f          45     0
+      47      33  2022-04-19 14:05:59  https://mail.google.com/mail/u/0/#inbox                                           Inbox (12) - unsub.fscs@gmail.com - Gmail               0     0
+      48      37  2022-04-19 14:56:47  https://mail.google.com/mail/u/0/#inbox/WhctKKXXDrfCqvtRjhGdkMBqVNFnwtCnJjRvqlXs  cheaper than Rx supplements -- txid: 517b2156           0     0
+      49      38  2022-04-19 14:56:52  https://www.google.com/url?q=https://imgur.com/dTgrkP7&source=gmail&ust=16504666  Imgur: The magic of the Internet                        0     0
+      50      39  2022-04-19 14:56:52  https://imgur.com/dTgrkP7                                                         Imgur: The magic of the Internet                       49     0
+      51      40  2022-04-19 14:58:59  https://www.google.com/search?q=blockchain+explorer&rlz=1C1ONGR_enUS989US989&oq=  blockchain explorer - Google Search                     0     5
+      52      40  2022-04-19 14:59:00  https://www.google.com/search?q=blockchain+explorer&rlz=1C1ONGR_enUS989US989&oq=  blockchain explorer - Google Search                     0     0
+      53      41  2022-04-19 14:59:01  https://www.blockchain.com/explorer                                               Blockchain Explorer - Search the Blockchain |          52     0
+      54      41  2022-04-19 14:59:02  https://www.blockchain.com/explorer                                               Blockchain Explorer - Search the Blockchain |           0     0
+      55      42  2022-04-19 14:59:06  https://www.blockchain.com/search?search=517b2156914944339a96137ad8978408ea52b2f  Transaction: 517b2156914944339a96137ad8978408          54     0
+      56      43  2022-04-19 14:59:06  https://www.blockchain.com/btc/tx/517b2156914944339a96137ad8978408ea52b2fc144c98  Transaction: 517b2156914944339a96137ad8978408          55     0
+      57      43  2022-04-19 14:59:06  https://www.blockchain.com/btc/tx/517b2156914944339a96137ad8978408ea52b2fc144c98  Transaction: 517b2156914944339a96137ad8978408          54     0
+      58      44  2022-04-19 14:59:21  https://www.blockchain.com/btc/address/38RcsURWCDmCbYocmsZCnGz1FtD7x477mt         Address: 38RcsURWCDmCbYocmsZCnGz1FtD7x477mt |          54     0
+      59      45  2022-04-19 14:59:38  https://www.google.com/search?q=kraken&rlz=1C1ONGR_enUS989US989&oq=kraken&aqs=ch  kraken - Google Search                                  0     5
+      60      45  2022-04-19 14:59:39  https://www.google.com/search?q=kraken&rlz=1C1ONGR_enUS989US989&oq=kraken&aqs=ch  kraken - Google Search                                  0     0
+      61      46  2022-04-19 14:59:47  https://www.kraken.com/en-us/sign-in                                              Sign in to Kraken - Kraken | Buy, Sell and Ma          60     0
+      62      46  2022-04-19 14:59:47  https://www.kraken.com/en-us/sign-in                                              Sign in to Kraken - Kraken | Buy, Sell and Ma           0     0
+      63      47  2022-04-19 15:00:21  https://www.kraken.com/en-us/device-approval                                      Approve new device - Kraken | Buy, Sell and M           0     0
+      64      48  2022-04-19 15:01:11  https://www.kraken.com/u/trade?i=true                                                                                                    63     0
+      65      49  2022-04-19 15:01:12  https://www.kraken.com/u/instant                                                  Kraken | Buy, Sell and Margin Trade Bitcoin (          63     0
+      66      50  2022-04-19 15:01:21  https://www.kraken.com/u/funding                                                  41,543.80 USD - Kraken - Funding - Overview            63     0
+      67      51  2022-04-19 15:01:31  https://www.kraken.com/redirect?url=https%3A%2F%2Fmempool.space%2Ftx%2F517b21569  Transaction: 517b2156914944339a96137ad8978408           0     0
+      68      52  2022-04-19 15:01:33  http://www.kraken.com/redirect?t=-_F22IhwssFD                                     Transaction: 517b2156914944339a96137ad8978408          67     0
+      69      53  2022-04-19 15:01:33  https://www.kraken.com/redirect?t=-_F22IhwssFD                                    Transaction: 517b2156914944339a96137ad8978408          68     0
+      70      54  2022-04-19 15:01:33  https://mempool.space/tx/517b2156914944339a96137ad8978408ea52b2fc144c98d3b0b16b2  Transaction: 517b2156914944339a96137ad8978408          69     0
+      71      55  2022-04-19 15:02:05  https://www.kraken.com/u/history/ledger                                           41,563.70 USD - Kraken - History - Ledger              63     0
+      72      56  2022-04-19 15:02:32  https://mail.google.com/mail/u/0/#inbox/WhctKKXXDrfCqvtRjhGdkMBqVNFnwtCnJjRvqlXs  cheaper than Rx supplements - order - unsub.f          48     0
+      73      57  2022-04-19 15:02:44  https://mail.google.com/mail/u/0/#inbox/WhctKKXXDrfCqvtRjhGdkMBqVNFnwtCnJjRvqlXs  cheaper than Rx supplements - order - unsub.f          72     0
+      74      37  2022-04-19 15:02:56  https://mail.google.com/mail/u/0/#inbox/WhctKKXXDrfCqvtRjhGdkMBqVNFnwtCnJjRvqlXs  cheaper than Rx supplements -- txid: 517b2156          73     0

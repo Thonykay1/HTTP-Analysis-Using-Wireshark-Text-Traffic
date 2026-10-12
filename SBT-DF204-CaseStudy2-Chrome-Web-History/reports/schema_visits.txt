@@ -1,0 +1,9 @@
+0|id|INTEGER|0||1
+1|url|INTEGER|1||0
+2|visit_time|INTEGER|1||0
+3|from_visit|INTEGER|0||0
+4|transition|INTEGER|1|0|0
+5|segment_id|INTEGER|0||0
+6|visit_duration|INTEGER|1|0|0
+7|incremented_omnibox_typed_score|BOOLEAN|1|FALSE|0
+8|opener_visit|INTEGER|0||0

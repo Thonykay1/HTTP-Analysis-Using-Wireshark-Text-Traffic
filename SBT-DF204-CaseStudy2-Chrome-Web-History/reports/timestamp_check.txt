@@ -1,0 +1,12 @@
+visit_id                              url                                  raw_webkit           visit_utc
+--------  ------------------------------------------------------------  -----------------  -------------------
+       1  https://www.google.com/search?q=craigslist&rlz=1C1ONGR_enUS9  13294850058231547  2022-04-19 13:54:18
+       2  https://www.google.com/search?q=craigslist&rlz=1C1ONGR_enUS9  13294850059218619  2022-04-19 13:54:19
+       3  https://www.craigslist.org/                                   13294850059946032  2022-04-19 13:54:19
+       4  https://geo.craigslist.org/                                   13294850059946032  2022-04-19 13:54:19
+       5  https://baltimore.craigslist.org/                             13294850059946032  2022-04-19 13:54:19
+       6  https://accounts.craigslist.org/login/home                    13294850062411492  2022-04-19 13:54:22
+       7  https://accounts.craigslist.org/login?rp=%2Flogin%2Fhome&rt=  13294850062411492  2022-04-19 13:54:22
+       8  https://accounts.craigslist.org/login/home                    13294850079868149  2022-04-19 13:54:39
+       9  https://www.craigslist.org/                                   13294850103307397  2022-04-19 13:55:03
+      10  https://baltimore.craigslist.org/                             13294850103307397  2022-04-19 13:55:03
