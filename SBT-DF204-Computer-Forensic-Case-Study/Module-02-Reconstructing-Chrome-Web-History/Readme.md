@@ -616,13 +616,6 @@ Personal attribution remains **moderate**. The database records browser-profile 
 
 ---
 
-## 11. Declaration
-
-I, Akinwa Omokunle Anthony, confirm that this case study report is based on my own practical work conducted in the ICDFA lab environment. All SQL queries, timeline reconstruction, and forensic correlation tasks are my own original work. The original Chrome History database was preserved with a SHA-256 hash (`b991b0fa69662c44caf599e468c8088576ebd9cebbf46d02c89cf51bcde3fd19`); all analysis was performed on a verified working copy, and no live website, account, message, wallet, or transaction was contacted. Unrelated personal data has been redacted from screenshots.
-
-**Signature:** ______________________ **Date:** 12th October, 2026
-
----
 
 ## Appendix A — Evidence Log
 
