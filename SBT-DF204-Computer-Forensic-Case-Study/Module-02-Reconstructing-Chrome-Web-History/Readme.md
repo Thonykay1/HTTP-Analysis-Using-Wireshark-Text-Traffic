@@ -1,5 +1,9 @@
 # SBT-DF204 — Case Study 2: Reconstructing Chrome Web History
 
+![ICDFA](https://img.shields.io/badge/ICDFA-SBT--DF204-blue)
+![Lab](https://img.shields.io/badge/CaseStudy-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 **International Cybersecurity and Digital Forensics Academy (ICDFA)**
 **School of Basic Vocational Training (SVT)**
 
