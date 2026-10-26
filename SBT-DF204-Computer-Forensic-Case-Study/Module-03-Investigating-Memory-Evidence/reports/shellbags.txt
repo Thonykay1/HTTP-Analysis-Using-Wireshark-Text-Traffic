@@ -1,0 +1,263 @@
+Scanning for registries....
+Gathering shellbag items and building path tree...
+***************************************************************************
+Registry: \??\C:\Users\IEUser\ntuser.dat 
+Key: Software\Microsoft\Windows\Shell\Bags\1\Desktop
+Last updated: 2019-01-06 14:32:53 UTC+0000
+Value                     File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Unicode Name
+------------------------- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ------------
+ItemPos944x959x96(1)      GOOGLE~1.LNK   2018-09-17 14:55:16 UTC+0000   2018-09-17 14:53:04 UTC+0000   2018-09-17 14:53:04 UTC+0000   ARC                       Google Chrome.lnk 
+ItemPos944x959x96(1)      eula.lnk       2015-09-21 09:19:50 UTC+0000   2015-09-21 09:19:50 UTC+0000   2015-09-21 09:19:50 UTC+0000   ARC                       eula.lnk 
+ItemPos944x959x96(1)      OSFORE~1.LNK   2018-09-17 14:56:30 UTC+0000   2018-09-17 14:56:30 UTC+0000   2018-09-17 14:56:30 UTC+0000   ARC                       OSForensics.lnk 
+ItemPos1024x768x96(1)     eula.lnk       2015-09-21 09:19:50 UTC+0000   2015-09-21 09:19:50 UTC+0000   2015-09-21 09:19:50 UTC+0000   ARC                       eula.lnk 
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU
+Last updated: 2019-01-06 15:04:40 UTC+0000
+Value   Mru   Entry Type     GUID                                     GUID Description     Folder IDs
+------- ----- -------------- ---------------------------------------- -------------------- ----------
+1       4     Folder Entry   26ee0668-a00a-44d7-9371-beb064c98683     {Unknown CSIDL}      EXPLORER, MY_COMPUTER, RECYCLE_BIN, UKNOWN 
+0       0     Folder Entry   20d04fe0-3aea-1069-a2d8-08002b30309d     My Computer          EXPLORER, MY_COMPUTER 
+3       3     Folder Entry   f02c1a0d-be21-4350-88b0-7367fc96ef3c     Network              EXPLORER, MY_DOCUMENTS, MY_COMPUTER, NETWORK 
+2       1     Folder Entry   031e4825-7b94-4dc3-b131-e946b44c8dd5     Libraries            EXPLORER, LIBRARIES 
+4       2     Folder Entry   59031a47-3f72-44a7-89c5-5595fe6b30ee     Users                EXPLORER, USERS 
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0
+Last updated: 2019-01-06 15:07:03 UTC+0000
+Value   Mru   Entry Type     Path
+------- ----- -------------- ----
+1       1     Volume Name    C:\ 
+0       4     Volume Name    A:\ 
+3       3     Volume Name    D:\ 
+2       2     Volume Name    E:\ 
+4       0     Volume Name    F:\ 
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\2
+Last updated: 2015-09-23 09:45:21 UTC+0000
+Value   Mru   Entry Type     GUID                                     GUID Description     Folder IDs
+------- ----- -------------- ---------------------------------------- -------------------- ----------
+0       0     Folder         7b0db17d-9cd2-4a93-9733-46cc89022e7c     Documents Library    EXPLORER 
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\4
+Last updated: 2019-01-06 14:55:45 UTC+0000
+Value   Mru   Entry Type     GUID                                     GUID Description     Folder IDs
+------- ----- -------------- ---------------------------------------- -------------------- ----------
+0       0     Folder         374de290-123f-4565-9164-39c4925e467b     Downloads            EXPLORER 
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1
+Last updated: 2019-01-06 15:04:40 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+1       0     Users          2015-09-21 09:50:54 UTC+0000   2009-07-14 02:37:06 UTC+0000   2015-09-21 09:50:54 UTC+0000   RO, DIR                   C:\Users
+0       2     BGinfo         2015-09-21 09:17:38 UTC+0000   2015-09-21 09:17:38 UTC+0000   2015-09-21 09:17:38 UTC+0000   DIR                       C:\BGinfo
+3       1     Windows        2015-09-22 18:34:30 UTC+0000   2009-07-14 02:37:06 UTC+0000   2015-09-22 18:34:30 UTC+0000   DIR                       C:\Windows
+2       3     Drivers        2015-09-22 08:11:50 UTC+0000   2015-09-22 08:11:50 UTC+0000   2015-09-22 08:11:50 UTC+0000   DIR                       C:\Drivers
+4       4     PerfLogs       2009-07-14 02:37:06 UTC+0000   2009-07-14 02:37:06 UTC+0000   2009-07-14 02:37:06 UTC+0000   DIR                       C:\PerfLogs
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\2
+Last updated: 2015-09-21 22:30:28 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+0       0     support        2009-07-14 08:13:24 UTC+0000   2009-07-14 08:13:24 UTC+0000   2009-07-14 08:13:24 UTC+0000   RO, DIR                   E:\support
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\3
+Last updated: 2015-09-22 08:08:43 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+1       0     32Bit          2015-09-08 07:09:06 UTC+0000   2015-09-08 07:09:06 UTC+0000   1970-01-01 00:00:00 UTC+0000   DIR                       D:\32Bit
+0       1     64Bit          2015-09-08 07:09:06 UTC+0000   2015-09-08 07:09:06 UTC+0000   1970-01-01 00:00:00 UTC+0000   DIR                       D:\64Bit
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\1\0
+Last updated: 2015-09-21 20:51:24 UTC+0000
+Value   Mru   Entry Type     GUID                                     GUID Description     Folder IDs
+------- ----- -------------- ---------------------------------------- -------------------- ----------
+1       1     Control Panel  36eef7db-88ad-4e81-ad49-0e313f0c35f8     Windows Update       EXPLORER, MY_GAMES 
+0       0     Control Panel  bb06c0e4-d293-4f75-8a90-cb05b6477eee     System               EXPLORER, MY_GAMES 
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\1\1
+Last updated: 2015-09-22 05:24:36 UTC+0000
+Value   Mru   Entry Type     GUID                                     GUID Description     Folder IDs
+------- ----- -------------- ---------------------------------------- -------------------- ----------
+0       0     Control Panel  c555438b-3c23-4769-a71f-b6d3d9b6053a     Display              EXPLORER, MY_GAMES 
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\1\2
+Last updated: 2015-09-22 08:07:12 UTC+0000
+Value   Mru   Entry Type     GUID                                     GUID Description     Folder IDs
+------- ----- -------------- ---------------------------------------- -------------------- ----------
+1       0     Control Panel  7007acc7-3202-11d1-aad2-00805fc1270e     Unknown GUID         EXPLORER, MY_GAMES 
+0       1     Control Panel  8e908fc9-becc-40f6-915b-f4ca0e70d03d     Network and Sharing Center EXPLORER, MY_GAMES 
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\1\4
+Last updated: 2019-01-06 14:32:21 UTC+0000
+Value   Mru   Entry Type     GUID                                     GUID Description     Folder IDs
+------- ----- -------------- ---------------------------------------- -------------------- ----------
+0       0     Control Panel  05d7b0f4-2121-4eff-bf6b-ed3f69b894d9     Notification Area Icons EXPLORER, MY_GAMES 
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\1
+Last updated: 2015-09-21 22:28:44 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+0       0     IEUser         2015-09-21 09:22:10 UTC+0000   2015-09-21 09:17:34 UTC+0000   2015-09-21 09:22:10 UTC+0000   DIR                       C:\Users\IEUser
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\2
+Last updated: 2015-09-22 08:12:00 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+0       0     x86            2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:50 UTC+0000   2015-09-22 08:11:52 UTC+0000   DIR                       C:\Drivers\x86
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\3
+Last updated: 2015-09-23 09:45:53 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+1       2     Temp           2015-09-22 18:57:24 UTC+0000   2009-07-14 02:37:10 UTC+0000   2015-09-22 18:57:24 UTC+0000   DIR                       C:\Windows\Temp
+0       3     SOFTWA~1       2015-09-21 09:55:56 UTC+0000   2015-09-21 18:17:00 UTC+0000   2015-09-21 09:55:56 UTC+0000   DIR                       C:\Windows\SoftwareDistribution
+2       1     DOWNLO~1       2009-07-14 04:52:32 UTC+0000   2009-07-14 04:52:32 UTC+0000   2009-07-14 04:52:32 UTC+0000   DIR                       C:\Windows\Downloaded Program Files
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\1\0\1
+Last updated: 2015-09-22 02:53:06 UTC+0000
+Value   Mru   Entry Type     GUID                                     GUID Description     Folder IDs
+------- ----- -------------- ---------------------------------------- -------------------- ----------
+1       0     Folder (unsupported) This property is not yet supported                             
+0       1     Folder (unsupported) This property is not yet supported                             
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\1\1\0
+Last updated: 2015-09-22 05:24:36 UTC+0000
+Value   Mru   Entry Type     GUID                                     GUID Description     Folder IDs
+------- ----- -------------- ---------------------------------------- -------------------- ----------
+0       0     Folder (unsupported) This property is not yet supported                             
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\1\0
+Last updated: 2019-01-06 15:04:40 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+1       0     DOWNLO~1       2019-01-06 14:49:40 UTC+0000   2015-09-21 09:17:34 UTC+0000   2019-01-06 14:49:40 UTC+0000   RO, DIR                   C:\Users\IEUser\Downloads
+0       1     AppData        2015-09-21 09:17:34 UTC+0000   2015-09-21 09:17:34 UTC+0000   2015-09-21 09:17:34 UTC+0000   HID, NI, DIR              C:\Users\IEUser\AppData
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\2\0
+Last updated: 2015-09-23 10:17:18 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+1       3     Bin            2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   DIR                       C:\Drivers\x86\Bin
+0       4     VBOXGU~1       2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   DIR                       C:\Drivers\x86\VBoxGuest
+3       2     Tools          2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   DIR                       C:\Drivers\x86\Tools
+2       1     VBoxSF         2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   DIR                       C:\Drivers\x86\VBoxSF
+4       0     AUTOLO~1       2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   DIR                       C:\Drivers\x86\AutoLogon
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\3\1
+Last updated: 2015-09-23 09:45:06 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+0       0     KB2468~1.303   2015-09-21 10:16:40 UTC+0000   2015-09-21 10:16:40 UTC+0000   2015-09-21 10:16:40 UTC+0000   DIR                       C:\Windows\Temp\KB2468871v2_10.0.30319
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\1\0\0
+Last updated: 2015-09-23 09:49:19 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+1       0     Local          2015-09-23 09:48:14 UTC+0000   2015-09-21 09:17:34 UTC+0000   2015-09-23 09:48:14 UTC+0000   NI, DIR                   C:\Users\IEUser\AppData\Local
+0       1     Roaming        2015-09-21 09:21:06 UTC+0000   2015-09-21 09:17:34 UTC+0000   2015-09-21 09:21:06 UTC+0000   NI, DIR                   C:\Users\IEUser\AppData\Roaming
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\2\0\3
+Last updated: 2015-09-22 08:14:26 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+0       0     NT4            2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   2015-09-22 08:11:52 UTC+0000   DIR                       C:\Drivers\x86\Tools\NT4
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\1\0\0\0
+Last updated: 2015-09-21 22:28:44 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+0       0     MICROS~1       2015-09-21 09:46:12 UTC+0000   2015-09-21 09:17:34 UTC+0000   2015-09-21 09:46:12 UTC+0000   SYS, NI, DIR              C:\Users\IEUser\AppData\Roaming\Microsoft
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\1\0\0\1
+Last updated: 2015-09-23 09:49:19 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+0       0     Temp           2015-09-23 09:48:56 UTC+0000   2015-09-21 09:17:34 UTC+0000   2015-09-23 09:48:56 UTC+0000   NI, DIR                   C:\Users\IEUser\AppData\Local\Temp
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\1\0\0\0\0
+Last updated: 2015-09-21 22:28:44 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+0       0     Windows        2015-09-21 09:21:12 UTC+0000   2015-09-21 09:17:34 UTC+0000   2015-09-21 09:21:12 UTC+0000   NI, DIR                   C:\Users\IEUser\AppData\Roaming\Microsoft\Windows
+***************************************************************************
+
+***************************************************************************
+Registry: \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat 
+Key: Local Settings\Software\Microsoft\Windows\Shell\BagMRU\0\1\1\0\0\0\0\0
+Last updated: 2015-09-21 22:28:44 UTC+0000
+Value   Mru   File Name      Modified Date                  Create Date                    Access Date                    File Attr                 Path
+------- ----- -------------- ------------------------------ ------------------------------ ------------------------------ ------------------------- ----
+0       0     STARTM~1       2015-09-21 14:40:16 UTC+0000   2015-09-21 09:17:34 UTC+0000   2015-09-21 09:21:12 UTC+0000   RO, DIR                   C:\Users\IEUser\AppData\Roaming\Microsoft\Windows\Start Menu
+***************************************************************************
+

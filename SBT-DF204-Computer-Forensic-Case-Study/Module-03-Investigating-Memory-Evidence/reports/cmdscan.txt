@@ -1,0 +1,21 @@
+**************************************************
+CommandProcess: conhost.exe Pid: 2000
+CommandHistory: 0x320960 Application: sshd.exe Flags: Allocated
+CommandCount: 0 LastAdded: -1 LastDisplayed: -1
+FirstCommand: 0 CommandCountMax: 50
+ProcessHandle: 0x54
+Cmd #29 @ 0x3200c4: 3?4?2???2
+Cmd #37 @ 0x3200c4: 3?4?2???2
+**************************************************
+CommandProcess: conhost.exe Pid: 3988
+CommandHistory: 0x110448 Application: cmd.exe Flags: Allocated, Reset
+CommandCount: 3 LastAdded: 2 LastDisplayed: 2
+FirstCommand: 0 CommandCountMax: 50
+ProcessHandle: 0x5c
+Cmd #0 @ 0x10dc40: ipconfig
+Cmd #1 @ 0x107f90: cd Downloads
+Cmd #2 @ 0x1147a0: copy secret_file.docx F:
+Cmd #22 @ 0xff818488: ?
+Cmd #25 @ 0xff818488: ?
+Cmd #36 @ 0xe00c4: ?????
+Cmd #37 @ 0x10cff0: ?????

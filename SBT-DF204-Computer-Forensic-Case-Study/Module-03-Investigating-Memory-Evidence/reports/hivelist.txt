@@ -1,0 +1,17 @@
+Virtual    Physical   Name
+---------- ---------- ----
+0x87c10370 0x27fd5370 [no name]
+0x87c1c008 0x27fa3008 \REGISTRY\MACHINE\SYSTEM
+0x87c459c8 0x27d8e9c8 \REGISTRY\MACHINE\HARDWARE
+0x889c0430 0x1285a430 \??\C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT
+0x8b46d008 0x16d8c008 \??\C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT
+0x8b5d39b0 0x120049b0 \??\C:\Users\IEUser\ntuser.dat
+0x97104008 0x1c45f008 \SystemRoot\System32\Config\SECURITY
+0x9711d9c8 0x1e6a09c8 \SystemRoot\System32\Config\SOFTWARE
+0x981f9008 0x1b446008 \SystemRoot\System32\Config\DEFAULT
+0x98209518 0x1f3a7518 \SystemRoot\System32\Config\SAM
+0x982d55c0 0x1e17c5c0 \REGISTRY\MACHINE\BCD00000000
+0xa620b008 0x1997b008 \??\C:\Users\IEUser\AppData\Local\Microsoft\Windows\UsrClass.dat
+0xa65269c8 0x17ad09c8 \??\C:\Users\sshd_server\ntuser.dat
+0xa6539260 0x0f690260 \??\C:\Users\sshd_server\AppData\Local\Microsoft\Windows\UsrClass.dat
+0xa7d2a9c8 0x01c469c8 \??\C:\System Volume Information\Syscache.hve

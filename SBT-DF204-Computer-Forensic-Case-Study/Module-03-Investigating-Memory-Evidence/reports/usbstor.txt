@@ -1,0 +1,11 @@
+Legend: (S) = Stable   (V) = Volatile
+
+----------------------------
+Registry: \REGISTRY\MACHINE\SYSTEM
+Key name: USBSTOR (S)
+Last updated: 2019-01-06 15:02:54 UTC+0000
+
+Subkeys:
+  (S) Disk&Ven_General&Prod_UDisk&Rev_5.00
+
+Values:

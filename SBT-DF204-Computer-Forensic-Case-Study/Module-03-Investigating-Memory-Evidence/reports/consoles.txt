@@ -1,0 +1,76 @@
+**************************************************
+ConsoleProcess: conhost.exe Pid: 2000
+Console: 0xe181c0 CommandHistorySize: 50
+HistoryBufferCount: 2 HistoryBufferMax: 4
+OriginalTitle: C:\Program Files\OpenSSH\bin\cygrunsrv.exe
+Title: C:\Program Files\OpenSSH\bin\cygrunsrv.exe
+AttachedProcess: sshd.exe Pid: 2016 Handle: 0x54
+----
+CommandHistory: 0x320960 Application: sshd.exe Flags: Allocated
+CommandCount: 0 LastAdded: -1 LastDisplayed: -1
+FirstCommand: 0 CommandCountMax: 50
+ProcessHandle: 0x54
+----
+CommandHistory: 0x3207f0 Application: - Flags: 
+CommandCount: 0 LastAdded: -1 LastDisplayed: -1
+FirstCommand: 0 CommandCountMax: 50
+ProcessHandle: 0x0
+----
+Screen 0x3360a0 X:80 Y:300
+Dump:
+
+**************************************************
+ConsoleProcess: conhost.exe Pid: 3988
+Console: 0xe181c0 CommandHistorySize: 50
+HistoryBufferCount: 2 HistoryBufferMax: 4
+OriginalTitle: %SystemRoot%\system32\cmd.exe
+Title: C:\Windows\system32\cmd.exe
+AttachedProcess: cmd.exe Pid: 3996 Handle: 0x5c
+----
+CommandHistory: 0x1105d8 Application: ipconfig.exe Flags: 
+CommandCount: 0 LastAdded: -1 LastDisplayed: -1
+FirstCommand: 0 CommandCountMax: 50
+ProcessHandle: 0x0
+----
+CommandHistory: 0x110448 Application: cmd.exe Flags: Allocated, Reset
+CommandCount: 3 LastAdded: 2 LastDisplayed: 2
+FirstCommand: 0 CommandCountMax: 50
+ProcessHandle: 0x5c
+Cmd #0 at 0x10dc40: ipconfig
+Cmd #1 at 0x107f90: cd Downloads
+Cmd #2 at 0x1147a0: copy secret_file.docx F:
+----
+Screen 0xf63b8 X:80 Y:300
+Dump:
+Microsoft Windows [Version 6.1.7601]                                            
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.                 
+                                                                                
+C:\Users\IEUser>ipconfig                                                        
+                                                                                
+Windows IP Configuration                                                        
+                                                                                
+                                                                                
+Ethernet adapter Local Area Connection 3:                                       
+                                                                                
+   Connection-specific DNS Suffix  . :                                          
+   Link-local IPv6 Address . . . . . : fe80::1571:7b34:b2b1:bbe4%18             
+   IPv4 Address. . . . . . . . . . . : 192.168.56.8                             
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0                            
+   Default Gateway . . . . . . . . . :                                          
+                                                                                
+Tunnel adapter isatap.{7FD51246-C28D-46B6-AA98-EB2C150C388B}:                   
+                                                                                
+   Media State . . . . . . . . . . . : Media disconnected                       
+   Connection-specific DNS Suffix  . :                                          
+                                                                                
+Tunnel adapter Teredo Tunneling Pseudo-Interface:                               
+                                                                                
+   Media State . . . . . . . . . . . : Media disconnected                       
+   Connection-specific DNS Suffix  . :                                          
+                                                                                
+C:\Users\IEUser>cd Downloads                                                    
+                                                                                
+C:\Users\IEUser\Downloads>copy secret_file.docx F:                              
+        1 file(s) copied.                                                       
+                                                                                
+C:\Users\IEUser\Downloads>                                                      
