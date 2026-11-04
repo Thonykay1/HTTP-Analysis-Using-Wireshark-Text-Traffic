@@ -471,17 +471,6 @@ The technical evidence establishes **artifacts**, **transfers**, **credentials**
 
 ---
 
-## 7. Declaration
-
-I, Akinwa Omokunle Anthony, confirm that this case study report is based on my own practical work conducted in the ICDFA lab environment. All forensic techniques — Sleuth Kit disk examination, PhotoRec file carving, FTP/HTTP traffic analysis via tshark, and ZIP cracking via fcrackzip — were performed by me on the supplied training artifacts.
-
-Password cracking was performed only against the supplied `contraband.zip` using `rockyou.txt`, exclusively inside the authorised lab environment. The recovered `rhino.exe` file was not executed at any time; its MD5 was matched to Microsoft's published `diskpart.exe` value without dynamic analysis. FTP credentials recovered from the network capture have been documented as evidence only and were not reused.
-
-No live host, IP, account, or service named in the evidence was contacted. Unrelated personal data has been redacted from screenshots.
-
-**Signature:** ______________________ **Date:** 4th November, 2026
-
----
 
 ## Appendix A — Evidence Log
 
@@ -613,7 +602,7 @@ b4f6bbb8d846d6505c9b5b67f115656fdf980a484aa441078a838a3ffc2ac705  rhino2.jpg
 | Case/Lab Identifier | SBT-DF204-CaseStudy4-AkinwaOmokunleAnthony |
 | Trainee Name | Akinwa Omokunle Anthony |
 | Student ID | 2025/FWSD/11206 |
-| Date and Time Acquired | 4 November, 2026 |
+| Date and Time Acquired | 12  October, 2026 |
 | Evidence File Names | `RHINOUSB.dd`, `rhino.log`, `rhino2.log`, `rhino3.log` |
 | Source | ICDFA SBT-DF204 Case Study 4 lab package |
 | File Sizes | 259,506,176 / 3,187,907 / 292,604 / 226,094 bytes |
